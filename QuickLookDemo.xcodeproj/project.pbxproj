@@ -6,14 +6,104 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		98EB52642E89045700AC749B /* QuickLook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98EB523E2E89042C00AC749B /* QuickLook.framework */; };
+		98EB52702E89045700AC749B /* CustomQLPreviewProvider.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 98EB52632E89045700AC749B /* CustomQLPreviewProvider.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		98EB52812E89F6D600AC749B /* QuickLookThumbnailing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98EB52802E89F6D600AC749B /* QuickLookThumbnailing.framework */; };
+		98EB52882E89F6D600AC749B /* CustomQLThumbnailProvider.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 98EB527F2E89F6D600AC749B /* CustomQLThumbnailProvider.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		98EB52902E8A005900AC749B /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 98EB528F2E8A005900AC749B /* README.md */; };
+		98EB52912E8A005900AC749B /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 98EB528F2E8A005900AC749B /* README.md */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		98EB526E2E89045700AC749B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 98EB521C2E89039800AC749B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 98EB52622E89045700AC749B;
+			remoteInfo = CustomQLPreviewProvider;
+		};
+		98EB52862E89F6D600AC749B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 98EB521C2E89039800AC749B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 98EB527E2E89F6D600AC749B;
+			remoteInfo = CustomQLThumnailProvider;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		98EB52502E89042C00AC749B /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				98EB52702E89045700AC749B /* CustomQLPreviewProvider.appex in Embed Foundation Extensions */,
+				98EB52882E89F6D600AC749B /* CustomQLThumbnailProvider.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		98EB52242E89039800AC749B /* QuickLookDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuickLookDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		98EB523E2E89042C00AC749B /* QuickLook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickLook.framework; path = System/Library/Frameworks/QuickLook.framework; sourceTree = SDKROOT; };
+		98EB52632E89045700AC749B /* CustomQLPreviewProvider.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = CustomQLPreviewProvider.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		98EB527F2E89F6D600AC749B /* CustomQLThumbnailProvider.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = CustomQLThumbnailProvider.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		98EB52802E89F6D600AC749B /* QuickLookThumbnailing.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickLookThumbnailing.framework; path = System/Library/Frameworks/QuickLookThumbnailing.framework; sourceTree = SDKROOT; };
+		98EB528F2E8A005900AC749B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		98EB52972E8A2EB100AC749B /* demo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = demo.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		98EB52712E89045700AC749B /* Exceptions for "CustomQLPreviewProvider" folder in "CustomQLPreviewProvider" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 98EB52622E89045700AC749B /* CustomQLPreviewProvider */;
+		};
+		98EB52762E8904EA00AC749B /* Exceptions for "QuickLookDemo" folder in "QuickLookDemo" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 98EB52232E89039800AC749B /* QuickLookDemo */;
+		};
+		98EB528C2E89F6D600AC749B /* Exceptions for "CustomQLThumbnailProvider" folder in "CustomQLThumbnailProvider" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 98EB527E2E89F6D600AC749B /* CustomQLThumbnailProvider */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		98EB52262E89039800AC749B /* QuickLookDemo */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				98EB52762E8904EA00AC749B /* Exceptions for "QuickLookDemo" folder in "QuickLookDemo" target */,
+			);
 			path = QuickLookDemo;
+			sourceTree = "<group>";
+		};
+		98EB52652E89045700AC749B /* CustomQLPreviewProvider */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				98EB52712E89045700AC749B /* Exceptions for "CustomQLPreviewProvider" folder in "CustomQLPreviewProvider" target */,
+			);
+			path = CustomQLPreviewProvider;
+			sourceTree = "<group>";
+		};
+		98EB52822E89F6D600AC749B /* CustomQLThumbnailProvider */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				98EB528C2E89F6D600AC749B /* Exceptions for "CustomQLThumbnailProvider" folder in "CustomQLThumbnailProvider" target */,
+			);
+			path = CustomQLThumbnailProvider;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -26,13 +116,34 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		98EB52602E89045700AC749B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98EB52642E89045700AC749B /* QuickLook.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98EB527C2E89F6D600AC749B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98EB52812E89F6D600AC749B /* QuickLookThumbnailing.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		98EB521B2E89039800AC749B = {
 			isa = PBXGroup;
 			children = (
+				98EB528F2E8A005900AC749B /* README.md */,
+				98EB52972E8A2EB100AC749B /* demo.gif */,
 				98EB52262E89039800AC749B /* QuickLookDemo */,
+				98EB52652E89045700AC749B /* CustomQLPreviewProvider */,
+				98EB52822E89F6D600AC749B /* CustomQLThumbnailProvider */,
+				98EB523D2E89042C00AC749B /* Frameworks */,
 				98EB52252E89039800AC749B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,8 +152,19 @@
 			isa = PBXGroup;
 			children = (
 				98EB52242E89039800AC749B /* QuickLookDemo.app */,
+				98EB52632E89045700AC749B /* CustomQLPreviewProvider.appex */,
+				98EB527F2E89F6D600AC749B /* CustomQLThumbnailProvider.appex */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		98EB523D2E89042C00AC749B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				98EB523E2E89042C00AC749B /* QuickLook.framework */,
+				98EB52802E89F6D600AC749B /* QuickLookThumbnailing.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -55,10 +177,13 @@
 				98EB52202E89039800AC749B /* Sources */,
 				98EB52212E89039800AC749B /* Frameworks */,
 				98EB52222E89039800AC749B /* Resources */,
+				98EB52502E89042C00AC749B /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				98EB526F2E89045700AC749B /* PBXTargetDependency */,
+				98EB52872E89F6D600AC749B /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				98EB52262E89039800AC749B /* QuickLookDemo */,
@@ -69,6 +194,50 @@
 			productName = QuickLookDemo;
 			productReference = 98EB52242E89039800AC749B /* QuickLookDemo.app */;
 			productType = "com.apple.product-type.application";
+		};
+		98EB52622E89045700AC749B /* CustomQLPreviewProvider */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 98EB52722E89045700AC749B /* Build configuration list for PBXNativeTarget "CustomQLPreviewProvider" */;
+			buildPhases = (
+				98EB525F2E89045700AC749B /* Sources */,
+				98EB52602E89045700AC749B /* Frameworks */,
+				98EB52612E89045700AC749B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				98EB52652E89045700AC749B /* CustomQLPreviewProvider */,
+			);
+			name = CustomQLPreviewProvider;
+			packageProductDependencies = (
+			);
+			productName = CustomQLPreviewProvider;
+			productReference = 98EB52632E89045700AC749B /* CustomQLPreviewProvider.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		98EB527E2E89F6D600AC749B /* CustomQLThumbnailProvider */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 98EB52892E89F6D600AC749B /* Build configuration list for PBXNativeTarget "CustomQLThumbnailProvider" */;
+			buildPhases = (
+				98EB527B2E89F6D600AC749B /* Sources */,
+				98EB527C2E89F6D600AC749B /* Frameworks */,
+				98EB527D2E89F6D600AC749B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				98EB52822E89F6D600AC749B /* CustomQLThumbnailProvider */,
+			);
+			name = CustomQLThumbnailProvider;
+			packageProductDependencies = (
+			);
+			productName = CustomQLThumnailProvider;
+			productReference = 98EB527F2E89F6D600AC749B /* CustomQLThumbnailProvider.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -81,6 +250,12 @@
 				LastUpgradeCheck = 2610;
 				TargetAttributes = {
 					98EB52232E89039800AC749B = {
+						CreatedOnToolsVersion = 26.1;
+					};
+					98EB52622E89045700AC749B = {
+						CreatedOnToolsVersion = 26.1;
+					};
+					98EB527E2E89F6D600AC749B = {
 						CreatedOnToolsVersion = 26.1;
 					};
 				};
@@ -100,12 +275,30 @@
 			projectRoot = "";
 			targets = (
 				98EB52232E89039800AC749B /* QuickLookDemo */,
+				98EB52622E89045700AC749B /* CustomQLPreviewProvider */,
+				98EB527E2E89F6D600AC749B /* CustomQLThumbnailProvider */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		98EB52222E89039800AC749B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98EB52912E8A005900AC749B /* README.md in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98EB52612E89045700AC749B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98EB52902E8A005900AC749B /* README.md in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98EB527D2E89F6D600AC749B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -122,7 +315,34 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		98EB525F2E89045700AC749B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98EB527B2E89F6D600AC749B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		98EB526F2E89045700AC749B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 98EB52622E89045700AC749B /* CustomQLPreviewProvider */;
+			targetProxy = 98EB526E2E89045700AC749B /* PBXContainerItemProxy */;
+		};
+		98EB52872E89F6D600AC749B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 98EB527E2E89F6D600AC749B /* CustomQLThumbnailProvider */;
+			targetProxy = 98EB52862E89F6D600AC749B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		98EB522D2E89039800AC749B /* Debug */ = {
@@ -256,6 +476,7 @@
 				DEVELOPMENT_TEAM = NLTYK5T6U3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = QuickLookDemo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -288,6 +509,7 @@
 				DEVELOPMENT_TEAM = NLTYK5T6U3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = QuickLookDemo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -303,6 +525,118 @@
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		98EB52732E89045700AC749B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NLTYK5T6U3;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CustomQLPreviewProvider/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = CustomQLPreviewProvider;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = itsuki.enjoy.QuickLookDemo.CustomQLPreviewProvider;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		98EB52742E89045700AC749B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NLTYK5T6U3;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CustomQLPreviewProvider/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = CustomQLPreviewProvider;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = itsuki.enjoy.QuickLookDemo.CustomQLPreviewProvider;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		98EB528A2E89F6D600AC749B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NLTYK5T6U3;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CustomQLThumbnailProvider/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = CustomQLThumbnailProvider;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = itsuki.enjoy.QuickLookDemo.CustomQLThumbnailProvider;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		98EB528B2E89F6D600AC749B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NLTYK5T6U3;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CustomQLThumbnailProvider/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = CustomQLThumbnailProvider;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = itsuki.enjoy.QuickLookDemo.CustomQLThumbnailProvider;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
@@ -327,6 +661,24 @@
 			buildConfigurations = (
 				98EB52302E89039800AC749B /* Debug */,
 				98EB52312E89039800AC749B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		98EB52722E89045700AC749B /* Build configuration list for PBXNativeTarget "CustomQLPreviewProvider" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98EB52732E89045700AC749B /* Debug */,
+				98EB52742E89045700AC749B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		98EB52892E89F6D600AC749B /* Build configuration list for PBXNativeTarget "CustomQLThumbnailProvider" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98EB528A2E89F6D600AC749B /* Debug */,
+				98EB528B2E89F6D600AC749B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
